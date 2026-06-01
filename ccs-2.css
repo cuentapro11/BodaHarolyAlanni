@@ -134,7 +134,7 @@ body {
 }
 
 .ampersand {
-    color: white;
+    color: black;
 }
 
 .quote {
@@ -200,8 +200,7 @@ body {
 
 .countdown-section {
     text-align: center;
-    background-color: hsl(var(--warm-white) / 0.8);
-    backdrop-filter: blur(4px);
+    background-color: hsl(var(--cream));
 }
 
 .section-title {
