@@ -11,7 +11,7 @@
     --brown-light: 88 16% 58%;
     --brown-dark: 88 22% 28%;
     --cream: 40 30% 96%;
-    --warm-white: 40 20% 98%;
+    --warm-white: 88 20% 92%;
     --shadow-elegant: 0 10px 30px -10px hsl(88 18% 42% / 0.25);
     --shadow-gold: 0 4px 20px hsl(88 18% 42% / 0.20);
 }
@@ -179,6 +179,7 @@ body {
 
 /* Sections */
 .countdown-section,
+.guests-section,
 .events-section,
 .gallery-section,
 .party-section,
@@ -187,20 +188,69 @@ body {
     padding: 4rem 1rem;
 }
 
+/* Alternancia de colores — nuevo orden con sección Invitados */
+.countdown-section,
 .events-section,
 .gifts-section {
-    background-color: hsl(var(--warm-white));
+    background-color: hsl(var(--cream));
 }
 
-.countdown-section,
+.guests-section,
 .party-section,
 .rsvp-section {
-    background-color: hsl(var(--cream));
+    background-color: hsl(var(--warm-white));
 }
 
 .countdown-section {
     text-align: center;
-    background-color: hsl(var(--cream));
+}
+
+/* Guests Section */
+.guests-container {
+    max-width: 32rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.guests-subtitle {
+    color: hsl(var(--foreground) / 0.7);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.guests-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: hsl(var(--gold) / 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: var(--shadow-elegant);
+}
+
+.guests-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+}
+
+.guests-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.18em;
+    color: hsl(var(--brown-dark));
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.guests-message {
+    color: hsl(var(--foreground) / 0.65);
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .section-title {
